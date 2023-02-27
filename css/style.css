@@ -1,0 +1,828 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 45px;
+    font-size: 1.2rem;
+    position: relative;
+    width: 100%;
+    height: 15%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 4px -1px;
+}
+
+header img {
+    width: 35px;
+    height: 35px;
+}
+
+.navlinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks li a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.navlinks li a::before {
+    content: '';
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 3px;
+    bottom: -2px;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+
+.navlinks li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.rightnav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightnav .searchbtn {
+    border: none;
+    position: absolute;
+    /* height: 35px; */
+    width: 35px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    right: 80px;
+    padding: 7px;
+    background-color: white;
+}
+
+.rightnav .searchbtn:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.rightnav input {
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    outline: none;
+    position: absolute;
+    right: 80px;
+}
+
+.fav1 {
+    /* position: absolute; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fav {
+    width: 25px;
+    height: 25px;
+}
+
+.fav1 button {
+    border: none;
+    position: absolute;
+    border: none;
+    border-radius: 50px;
+    padding: 4px;
+    /* border: 2px solid rebeccapurple; */
+    cursor: pointer;
+    right: 35px;
+    outline: none;
+    background: none;
+}
+
+.cart1 {
+    /* position: absolute; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart {
+    width: 25px;
+    height: 25px;
+}
+
+.cart1 button {
+    border: none;
+    position: absolute;
+    border: none;
+    border-radius: 50px;
+    padding: 4px;
+    cursor: pointer;
+    right: -2px;
+    background: none;
+}
+
+.fav1 button:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.cart1 button:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+#featured {
+    margin: 120px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    position: relative;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 40px; */
+}
+
+.featuredshoe {
+    padding: 5px;
+}
+
+.mainimg {
+    width: 700px;
+}
+
+.fetext {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.fetext h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.76;
+    margin-bottom: 40px;
+}
+
+.fetext p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+.fetext button {
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.fetext button:hover {
+    background-color: rgb(179, 179, 179);
+}
+
+.moreimg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.moreimg img {
+    width: 160px;
+    margin: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 20px;
+}
+
+#men {
+    margin: 100px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+#men h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.full {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.full1 img {
+    width: 555px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.full2 img {
+    width: 555px;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.menmoreitems2,
+.menmoreitems3,
+.menmoreitems4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 310px;
+}
+
+.menitem5 img,
+.menitem6 img,
+.menitem7 img,
+.menitem8 img,
+.menitem9 img,
+.menitem10 img,
+.menitem11 img,
+.menitem12 img,
+.menitem13 img,
+.menitem14 img,
+.menitem15 img,
+.menitem16 img {
+    width: 275px;
+    border-radius: 40px;
+    margin: 5px;
+}
+
+.menmoreitems2 h3,
+.menmoreitems3 h3,
+.menmoreitems4 h3 {
+    position: relative;
+    top: 10px
+}
+
+.menitem5text,
+.menitem6text,
+.menitem7text,
+.menitem8text,
+.menitem9text,
+.menitem10text,
+.menitem11text,
+.menitem12text,
+.menitem13text,
+.menitem14text,
+.menitem15text,
+.menitem16text {
+    position: relative;
+    background-color: #f6f6f6;
+    top: -50px;
+    margin: 5px;
+    padding: 8px 20px;
+    height: 60px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.menitem5text h3,
+.menitem6text h3,
+.menitem7text h3,
+.menitem8text h3,
+.menitem9text h3,
+.menitem10text h3,
+.menitem11text h3,
+.menitem12text h3,
+.menitem13text h3,
+.menitem14text h3,
+.menitem15text h3,
+.menitem16text h3 {
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.menitem5text p,
+.menitem6text p,
+.menitem7text p,
+.menitem8text p,
+.menitem9text p,
+.menitem10text p,
+.menitem11text p,
+.menitem12text p,
+.menitem13text p,
+.menitem14text p,
+.menitem15text p,
+.menitem16text p {
+    font-size: 1.1rem;
+    text-align: right;
+    align-items: center;
+    position: relative;
+    top: -12px;
+}
+
+#women {
+    margin: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+#women h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.wofull {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wofull1 img {
+    width: 555px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.wofull2 img {
+    width: 555px;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.womenmoreitems1,
+.womenmoreitems2,
+.womenmoreitems3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 310px;
+}
+
+.womenitem1 img,
+.womenitem2 img,
+.womenitem3 img,
+.womenitem4 img,
+.womenitem5 img,
+.womenitem6 img,
+.womenitem7 img,
+.womenitem8 img,
+.womenitem9 img,
+.womenitem10 img,
+.womenitem11 img,
+.womenitem12 img {
+    width: 275px;
+    border-radius: 40px;
+    margin: 5px;
+}
+
+.womenmoreitems1 h3,
+.womenmoreitems2 h3,
+.womenmoreitems3 h3 {
+    position: relative;
+    top: 10px
+}
+
+.womenitem1text,
+.womenitem2text,
+.womenitem3text,
+.womenitem4text,
+.womenitem5text,
+.womenitem6text,
+.womenitem7text,
+.womenitem8text,
+.womenitem9text,
+.womenitem10text,
+.womenitem11text,
+.womenitem12text {
+    position: relative;
+    background-color: #f6f6f6;
+    top: -50px;
+    margin: 5px;
+    padding: 8px 20px;
+    height: 60px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.womenitem1text h3,
+.womenitem2text h3,
+.womenitem3text h3,
+.womenitem4text h3,
+.womenitem5text h3,
+.womenitem6text h3,
+.womenitem7text h3,
+.womenitem8text h3,
+.womenitem9text h3,
+.womenitem10text h3,
+.womenitem11text h3,
+.womenitem12text h3 {
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.womenitem1text p,
+.womenitem2text p,
+.womenitem3text p,
+.womenitem4text p,
+.womenitem5text p,
+.womenitem6text p,
+.womenitem7text p,
+.womenitem8text p,
+.womenitem9text p,
+.womenitem10text p,
+.womenitem11text p,
+.womenitem12text p {
+    font-size: 1.1rem;
+    text-align: right;
+    align-items: center;
+    position: relative;
+    top: -12px;
+}
+
+#kids {
+    margin: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+#kids h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.kfull {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kfull1 img {
+    width: 555px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.kfull2 img {
+    width: 555px;
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.kimoreitems1,
+.kimoreitems2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 310px;
+}
+
+.kiitem1 img,
+.kiitem2 img,
+.kiitem3 img,
+.kiitem4 img,
+.kiitem5 img,
+.kiitem6 img,
+.kiitem7 img,
+.kiitem8 img {
+    width: 275px;
+    border-radius: 40px;
+    margin: 5px;
+}
+
+.kimoreitems1 h3,
+.kimoreitems2 h3 {
+    position: relative;
+    top: 10px
+}
+
+.kiitem1text,
+.kiitem2text,
+.kiitem3text,
+.kiitem4text,
+.kiitem5text,
+.kiitem6text,
+.kiitem7text,
+.kiitem8text {
+    position: relative;
+    background-color: #f6f6f6;
+    top: -50px;
+    margin: 5px;
+    padding: 8px 20px;
+    height: 60px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.kiitem1text h3,
+.kiitem2text h3,
+.kiitem3text h3,
+.kiitem4text h3,
+.kiitem5text h3,
+.kiitem6text h3,
+.kiitem7text h3,
+.kiitem8text h3 {
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.kiitem1text p,
+.kiitem2text p,
+.kiitem3text p,
+.kiitem4text p,
+.kiitem5text p,
+.kiitem6text p,
+.kiitem7text p,
+.kiitem8text p {
+    font-size: 1.1rem;
+    text-align: right;
+    align-items: center;
+    position: relative;
+    top: -12px;
+}
+
+#sale {
+    margin: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.salecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.salecontainer p {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.salecontainer h1 {
+    text-align: center;
+    font-size: 7.0rem;
+    font-weight: 1000;
+    text-transform: uppercase;
+    line-height: 0.73;
+    letter-spacing: -1px;
+    word-spacing: -6px;
+    margin-bottom: 10px;
+}
+
+#sale h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.salecontainer button {
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.salecontainer button:hover {
+    background-color: rgb(179, 179, 179);
+}
+
+.samoreitems1,
+.samoreitems2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 310px;
+}
+
+.saitem1 img,
+.saitem2 img,
+.saitem3 img,
+.saitem4 img,
+.saitem5 img,
+.saitem6 img,
+.saitem7 img,
+.saitem8 img {
+    width: 275px;
+    border-radius: 40px;
+    margin: 5px;
+}
+
+.samoreitems1 h3,
+.samoreitems2 h3 {
+    position: relative;
+    top: 10px
+}
+
+.saitem1text,
+.saitem2text,
+.saitem3text,
+.saitem4text,
+.saitem5text,
+.saitem6text,
+.saitem7text,
+.saitem8text {
+    position: relative;
+    background-color: #f6f6f6;
+    top: -50px;
+    margin: 5px;
+    padding: 8px 20px;
+    height: 60px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.saitem1text h3,
+.saitem2text h3,
+.saitem3text h3,
+.saitem4text h3,
+.saitem5text h3,
+.saitem6text h3,
+.saitem7text h3,
+.saitem8text h3 {
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.saitem1text p,
+.saitem2text p,
+.saitem3text p,
+.saitem4text p,
+.saitem5text p,
+.saitem6text p,
+.saitem7text p,
+.saitem8text p {
+    font-size: 1.1rem;
+    text-align: right;
+    align-items: center;
+    position: relative;
+    top: -12px;
+    text-decoration: line-through;
+}
+
+.salep {
+    font-size: 1.1rem;
+    position: relative;
+    top: -33.5px;
+    right: -150px;
+    color: green;
+    font-weight: bold;
+}
+
+footer {
+    position: relative;
+    background-color: black;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foot h1 {
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.leftfoot li a {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.568);
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.leftfoot li a:hover {
+    color: white;
+}
+
+.rightfoot p {
+    color: rgba(255, 255, 255, 0.568);
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+
+.centerfoot p {
+    color: rgba(255, 255, 255, 0.568);
+    font-size: 0.8rem;
+}
+
+
+.rightfoot input {
+    position: relative;
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.rightfoot button {
+    position: relative;
+    width: 36px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 32px;
+    top: 2px;
+    left: -40px;
+}
+
+.rightfoot button img {
+    width: 18px;
+}
+
+.rightfoot button:hover {
+    background-color: rgb(179, 179, 179);
+}
+
+.rightfoot li {
+    display: inline-block;
+}
+
+.rightfoot li a {
+    color: rgba(255, 255, 255, 0.568);
+    font-size: 25px;
+}
+
+.rightfoot li a:hover {
+    color: white;
+    font-size: 25px;
+}
+
+.footerlast {
+    position: relative;
+    top: -10px;
+    color: rgba(255, 255, 255, 0.568);
+    text-align: center;
+    font-size: 0.8rem;
+}
